@@ -1,0 +1,67 @@
+.intro {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center; 
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 4.5rem;
+  line-height: 80px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro h1::before {
+  content: "";
+  background: url("../img/decorador.svg") no-repeat center;
+  display: block;
+  width: 130px;
+  height: 100px;
+  top: -15px;
+  left: -40px;
+  position: absolute;
+  z-index: -1;
+}
+
+.intro p {
+  color: #525252;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .intro h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .intro h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+  .intro h1 {
+     line-height: 40px; 
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro img {
+    display: none;
+  }
+}
