@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #0d0c0c;
+  margin-bottom: 1000px;
 }
 
 img {
@@ -23,4 +24,12 @@ h2,
 h3,
 p {
   margin: 0px;
+}
+
+.caption {
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 1;
+  max-width: 4ch;
+  word-break: break-all;
 }
