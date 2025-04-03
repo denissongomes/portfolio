@@ -32,6 +32,12 @@
   font-size: 1.6rem;
 }
 
+ 
+.intro p img {
+  display:inline;
+   
+}
+
 @media (max-width: 1000px) {
   .intro h1 {
     font-size: 3.5rem;
@@ -45,7 +51,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-
+ 
   .intro h1::before {
     width: 30px;
     height: 10px;
@@ -56,19 +62,22 @@
      font-size: 2.5rem;
   }
   .intro p {
-    font-size: 1.30rem;
+    font-size: 1.45rem;
   }
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 540px) {
   .intro {
+    padding: 0px 30px 30px;
     grid-template-columns: 1fr;
   }
   .intro img {
-    display: none;
+    /* display: none; */
+    margin: 0 auto;
   }
+
   .intro p {
-    font-size: 1.35rem;
+    font-size: 1.30rem;
   }
 }
