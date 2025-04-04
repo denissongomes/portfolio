@@ -5,6 +5,17 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  position: relative;
+}
+.experiencia::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/decorador.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
 }
 
 .experiencia .caption {
