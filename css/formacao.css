@@ -15,7 +15,7 @@
 
 .formacao__container::after {
   content: "";
-  background: url("../img/detalhe.svg") no-repeat center;
+  background: url("../img/decorador.svg") no-repeat center;
   display: block;
   width: 130px;
   height: 100px;
@@ -135,10 +135,11 @@
 }
 
 @media (max-width: 800px) {
-  .formacao-container {
+  .formacao__container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
     gap: 40px;
+
   }
   .formacao .subtitulo {
     color: #ffffff;
@@ -150,4 +151,17 @@
     position: initial;
     margin-bottom: 10px;
   }
+  .formacao .caption {
+    max-width: initial;
+  }
+}
+@media (max-width: 540px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .formacao .caption {
+    max-width: initial;
+  }
+ 
 }
