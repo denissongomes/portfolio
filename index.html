@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-
+  <script src="./js/validacao_form.js"></script>
 </head>
 
 <body>
@@ -94,28 +94,28 @@
         <p class="projeto__texto">Aqui estão alguns dos meus <strong>projetos</strong> mais recentes. Sinta-se à vontade para explorá-los e me dar seu <strong>feedback</strong>!</p>
         <ul class="projetos__lista">
           <li class="projeto">
-            <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 1" class="projeto__imagem" width="250" height="200">
-            <h3 class="projeto__titulo">Projeto 1</h3>
-            <p class="projeto__descricao">Descrição do projeto 1.</p>
+            <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyp3g21t88rvb4j4140kc.png" alt="Player de Música" class="projeto__imagem" width="250" height="200">
+            <h3 class="projeto__titulo">Player de Música</h3>
+            <p class="projeto__descricao">Player de música em HTML e CSS para estilização.</p>
             <a href="#" class="projeto__link">Ver projeto</a>
 
           </li>
           <li class="projeto">
-            <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 2" class="projeto__imagem" width="250" height="200">
-            <h3 class="projeto__titulo">Projeto 2</h3>
-            <p class="projeto__descricao">Descrição do projeto 2.</p>
+            <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ff504dnvhnpsp9tjh9l93.png" alt="Catálogo de Filmes" class="projeto__imagem" width="250" height="200">
+            <h3 class="projeto__titulo">Catálogo de Filmes</h3>
+            <p class="projeto__descricao">Aplicativo para visualizar rapidamente filmes e séries de TV.</p>
             <a href="#" class="projeto__link">Ver projeto</a>
           </li>
           <li class="projeto">
-            <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 3" class="projeto__imagem" width="250" height="200">
-            <h3 class="projeto__titulo">Projeto 3</h3>
-            <p class="projeto__descricao">Descrição do projeto 3.</p>
+            <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkb8vmn0js1mq2zl4gtx1.png" alt="Jogo da Velha" class="projeto__imagem" width="250" height="200">
+            <h3 class="projeto__titulo">Jogo da Velha</h3>
+            <p class="projeto__descricao">Um dos jogos mais clássicos de todos os tempos.</p>
             <a href="#" class="projeto__link">Ver projeto</a>
           </li>
           <li class="projeto">
-            <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 1" class="projeto__imagem" width="250" height="200">
-            <h3 class="projeto__titulo">Projeto 4</h3>
-            <p class="projeto__descricao">Descrição do projeto 4.</p>
+            <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc7x1m062lv4rfjjurvor.png" alt="Website" class="projeto__imagem" width="250" height="200">
+            <h3 class="projeto__titulo">Website</h3>
+            <p class="projeto__descricao">Website de loja virtual de conteúdo dinâmico.</p>
             <a href="#" class="projeto__link">Ver projeto</a>
           </li>
 
@@ -170,33 +170,34 @@
     </div>
   </section>
 
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <div>
+      <p class="footer-texto">Estou  disponível para novos projetos!
+        Não seja tímido(a), entre em contato ou mande-me uma mensagem 😉</p>
+         
+      <ul class="footer-contato">
+        <li>denissongomes@email.com</li>
+        <li>+55 11 9999-9999</li>
+        <li><a href="/">@denissongomes</a></li>
+      </ul>
+    </div>
+      <form id="contact-form" class="footer-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Sua mensagem" rows="4" required></textarea>
+        <button type="submit" id="submit-button">Enviar</button>
+      </form>
+      
+      <p class="footer-copy">Denisson Gomes © Direitos reservados.</p>
+    </div>
+
+    
+  </footer>
 </body>
 
 </html>
 
-
-<!-- 
-      <div class="projeto">
-        <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 1" class="projeto__imagem" width="300" height="200">
-        <h3 class="projeto__titulo">Projeto 1</h3>
-        <p class="projeto__descricao">Descrição do projeto 1.</p>
-        <a href="#" class="projeto__link">Ver projeto</a>
-      </div>
-      <div class="projeto">
-        <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 2" class="projeto__imagem" width="300" height="200">
-        <h3 class="projeto__titulo">Projeto 2</h3>
-        <p class="projeto__descricao">Descrição do projeto 2.</p>
-        <a href="#" class="projeto__link">Ver projeto</a>
-      </div>
-      <div class="projeto">
-        <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 3" class="projeto__imagem" width="300" height="200">
-        <h3 class="projeto__titulo">Projeto 3</h3>
-        <p class="projeto__descricao">Descrição do projeto 3.</p>
-        <a href="#" class="projeto__link">Ver projeto</a>
-      </div>
-      <div class="projeto">
-        <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 4" class="projeto__imagem" width="300" height="200">
-        <h3 class="projeto__titulo">Projeto 4</h3>
-        <p class="projeto__descricao">Descrição do projeto 4.</p>
-        <a href="#" class="projeto__link">Ver projeto</a>
-      </div> -->
