@@ -22,17 +22,17 @@
 
     <nav class="menu">
       <ul class="header__menu">
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#sobre">Sobre</a></li> 
         <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#formacao">Formação</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
   </header>
 
   <main class="intro">
     <img src="./img/perfil.webp" alt="Denisson Gomes" class="intro__imagem" width="300" height="300">
-    <div>
+    <div id="sobre">
       <h1>Desenvolvedor<br> FrontEnd &<br> UX/UI Designer</h1>
       <p>Olá <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
         sou Denisson Gomes! Apaixonado por criar soluções web/mobile eficientes e impactantes. <br><br> Localizado em São Paulo/SP 🏙️
@@ -91,7 +91,7 @@
     <div class="projetos__container">
       <h2 class="caption">Projetos</h2>
       <div>
-        <p class="projeto__texto">Aqui estão alguns dos meus projetos mais recentes. Sinta-se à vontade para explorá-los e me dar seu feedback!</p>
+        <p class="projeto__texto">Aqui estão alguns dos meus <strong>projetos</strong> mais recentes. Sinta-se à vontade para explorá-los e me dar seu <strong>feedback</strong>!</p>
         <ul class="projetos__lista">
           <li class="projeto">
             <img src="https://cdn.pixabay.com/photo/2020/05/29/13/20/projects-5235095_1280.jpg" alt="Projeto 1" class="projeto__imagem" width="250" height="200">
@@ -121,6 +121,53 @@
 
         </ul>
       </div>
+  </section>
+  
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao__container">
+      <h2 class="caption">Formação</h2>
+
+      <div>
+        <p class="formacao__texto">
+            Minha experiência acadêmica mais recente foi a <strong>Pós-Graduação</strong> 🎓 que concluí em <strong>Ciência de Dados</strong>  e <strong>Inteligência Artificial</strong>. Além disso, estou sempre me atualizando por meio de cursos intensivos online
+        </p>
+
+        <ul class="faculdade__lista">
+          <li class="faculdade">
+            <span class="faculdade__tipo">Bacharel</span>
+            <h3 class="faculdade__curso">Administração de Empresas</h3>
+            <span class="faculdade__instituicao">UNINOVE</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade__tipo">Tecnólogo</span>
+            <h3 class="faculdade__curso">Análise & Desenvolvimento de Sistemas</h3>
+            <span class="faculdade__instituicao">UNINTER</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade__tipo">Pós-Graduação</span>
+            <h3 class="faculdade__curso">Ciência de Dados e Inteligência Artificial</h3>
+            <span class="faculdade__instituicao">UNINTER</span>
+          </li>
+        </ul>
+
+        <div class="formacao__extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>• WEB UX & UI Design - FrontEnd Masters <span>56h</span></li>
+              <li>• Front End Web Developer - FrontEnd Masters <span>72h</span></li>
+            </ul>
+          </div>
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>• Inglês <span>/ Avançado</span></li>
+              <li>• Espanhol <span>/ Intermediário</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </body>
