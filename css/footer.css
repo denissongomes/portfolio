@@ -2,7 +2,7 @@
   background: #000000;
 }
 
-.footer-container {
+.footer__container {
   max-width: 1200px;
   padding: 120px 20px 60px 20px;
   margin: 0 auto;
@@ -10,50 +10,47 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: center;
- 
 }
 
- 
-
-.footer-texto {
+.footer__texto {
   font-size: 1.5rem;
   line-height: 1.33;
   color: #cccccc;
   margin-bottom: 40px;
 }
 
-.footer-contato li {
+.footer__contato li {
   font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 1.1;
+  font-size: 1.5rem;
+  line-height: 1;
   color: #ffffff;
   margin-bottom: 30px;
 }
 
-.footer-contato li a {
+.footer__contato li a {
   color: #ffffff;
 }
 
-.footer-copy {
+.footer__copy {
   grid-column: 1 / -1;
   font-size: 1.125rem;
   color: #8f8f8f;
 }
 
-.footer-form {
+.footer__form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
 }
 
-.footer-form label {
+.footer__form label {
   font-size: 1rem;
   color: #ffffff;
 }
 
-.footer-form input,
-.footer-form textarea {
+.footer__form input,
+.footer__form textarea {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #cccccc;
@@ -62,12 +59,12 @@
   color: #ffffff;
 }
 
-.footer-form input::placeholder,
-.footer-form textarea::placeholder {
+.footer__form input::placeholder,
+.footer__form textarea::placeholder {
   color: #8f8f8f;
 }
 
-.footer-form button {
+.footer__form button {
   padding: 10px 20px;
   font-size: 1rem;
   color: #ffffff;
@@ -78,11 +75,11 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.footer-form button:hover {
+.footer__form button:hover {
   background-color: #bf3e21;
 }
 
-.footer-form button:active {
+.footer__form button:active {
   transform: scale(0.95);
 }
 
@@ -103,19 +100,19 @@
 }
 
 @media (max-width: 800px) {
-  .footer-container {
+  .footer__container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .footer-contato li {
+  .footer__contato li {
     font-size: 1.5rem;
   }
-  .footer-form input,
-  .footer-form textarea {
+  .footer__form input,
+  .footer__form textarea {
     font-size: 0.9rem;
   }
 
-  .footer-form button {
+  .footer__form button {
     font-size: 0.9rem;
   }
 }

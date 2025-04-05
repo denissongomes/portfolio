@@ -1,30 +1,51 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('form-contato');
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
 
-  if (!name) {
-    alert('O campo "Nome" não pode ser vazio.');
-    return;
+      if (!validateName(nome)) {
+        alert('Por favor, insira um nome válido.');
+        return;
+      }
+      
+      if (!validateEmail(email)) {
+        alert('Por favor, insira um endereço de e-mail válido.');
+        return;
+      }
+      
+      if (!validateMessage(mensagem)) {
+        alert('Por favor, insira uma mensagem válida.');
+        return;
+      }
+      
+      alert('Formulário enviado com sucesso!');
+      this.reset();
+    });
+
+    const submitButton = document.getElementById('submit');
+    if (submitButton) {
+      submitButton.addEventListener('click', function() {
+        this.classList.add('button-clicked');
+        setTimeout(() => this.classList.remove('button-clicked'), 300);
+      });
+    }
   }
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    alert('Por favor, insira um endereço de e-mail válido.');
-    return;
+  function validateName(name) {
+    return name.length > 0;
   }
 
-  if (!message) {
-    alert('O campo "Mensagem" não pode ser vazio.');
-    return;
+  function validateEmail(email) {
+    const regEx = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,}$/;
+    return regEx.test(email);
   }
 
-  alert('Mensagem enviada com sucesso!');
-  this.reset();
-});
-
-document.getElementById('submit-button').addEventListener('click', function() {
-  this.classList.add('button-clicked');
-  setTimeout(() => this.classList.remove('button-clicked'), 300);
+  function validateMessage(message) {
+    return message.length > 0;
+  }
 });
